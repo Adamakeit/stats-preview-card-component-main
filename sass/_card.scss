@@ -1,0 +1,103 @@
+.card {
+  background-color: $DarkdesaturatedblueCardBG;
+  width: 300px;
+  border-radius: 10px;
+  margin-block: 2rem;
+  &_image {
+    background-color: $Softvioletaccent;
+    // margin-block-end: 1.6rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    img {
+      width: 100%;
+      opacity: 0.5;
+    }
+    .desktop {
+      display: none;
+    }
+  }
+  &_description {
+    text-align: center;
+    padding: 1rem;
+    h1 {
+      font-family: "lexenddeca";
+      font-size: 1.7rem;
+      color: $Whitemainheadingstats;
+      margin-block: 1rem;
+      span {
+        color: $Softvioletaccent;
+      }
+    }
+    p {
+      color: $Slightlytransparentwhitemainparagraph;
+      font-family: "inter";
+    }
+  }
+  &_statistic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 2rem;
+    ul li {
+      margin-inline: 1rem;
+      margin-block-end: 1.3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $Whitemainheadingstats;
+      font-size: 1.2rem;
+      font-family: "inter";
+      font-weight: 700;
+      gap: 0.5rem;
+
+      span {
+        color: $Slightlytransparentwhitestatheadings;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 800px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    border-radius: 10px;
+
+    &_image {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 0px;
+      img {
+        width: 100%;
+        display: none;
+      }
+      .desktop {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &_statistic ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 1rem;
+    }
+    &_description {
+      width: 90%;
+      p {
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 1rem;
+      }
+    }
+  }
+}

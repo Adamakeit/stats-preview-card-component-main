@@ -1,0 +1,28 @@
+$VerydarkblueMainBG: hsl(233, 47%, 7%);
+$DarkdesaturatedblueCardBG: hsl(244, 38%, 16%);
+$Softvioletaccent: hsl(277, 64%, 61%);
+$Whitemainheadingstats: hsl(0, 0%, 100%);
+$Slightlytransparentwhitemainparagraph: hsla(0, 0%, 100%, 0.75);
+$Slightlytransparentwhitestatheadings: hsla(0, 0%, 100%, 0.6);
+@font-face {
+  font-family: "Inter";
+  src: url(../assets/fonts/Inter.ttf);
+  font-weight: 400 700;
+}
+@font-face {
+  font-family: "Lexenddeca";
+  src: url(../assets/fonts/LexendDeca.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+body {
+  min-height: 100svh;
+  background-color: $VerydarkblueMainBG;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
